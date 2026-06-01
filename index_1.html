@@ -5,101 +5,221 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BrainHub Privacy Policy / プライバシーポリシー</title>
 <style>
-body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 720px; margin: 40px auto; padding: 20px; line-height: 1.7; color: #333; }
-h1 { border-bottom: 2px solid #FFD700; padding-bottom: 10px; }
-h2 { color: #1a1a1a; margin-top: 30px; }
-a { color: #0066cc; }
-.last-updated { color: #888; font-size: 0.9em; }
-.lang-switch { text-align: center; margin: 20px 0; padding: 10px; background: #f5f5f5; border-radius: 8px; }
-.lang-switch a { margin: 0 15px; font-weight: bold; }
-.divider { border-top: 3px solid #FFD700; margin: 60px 0 40px; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { 
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+    background: linear-gradient(180deg, #0a0a0e 0%, #15151c 100%);
+    color: #e0e0e0;
+    line-height: 1.8;
+    min-height: 100vh;
+    padding: 60px 20px;
+  }
+  .container { max-width: 720px; margin: 0 auto; }
+  .header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+  }
+  .logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFD700;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  }
+  .subtitle {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+  .lang-switch {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin: 40px 0;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 215, 0, 0.15);
+  }
+  .lang-switch a {
+    flex: 1;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  .lang-switch a:hover {
+    background: rgba(255, 215, 0, 0.12);
+    color: #FFD700;
+  }
+  section {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 215, 0, 0.1);
+    border-radius: 16px;
+    padding: 40px 36px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  h1 {
+    font-size: 24px;
+    color: #FFD700;
+    margin-bottom: 6px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  h2 {
+    font-size: 16px;
+    color: #FFD700;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    padding-left: 12px;
+    border-left: 3px solid #FFD700;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  ul { padding-left: 24px; margin-top: 8px; }
+  li {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin-bottom: 6px;
+    line-height: 1.7;
+  }
+  a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  a:hover { opacity: 0.7; text-decoration: underline; }
+  .last-updated {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+  .divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #FFD700, transparent);
+    margin: 60px 0 40px;
+    opacity: 0.4;
+  }
+  .footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 11px;
+    margin-top: 40px;
+    letter-spacing: 2px;
+  }
+  @media (max-width: 600px) {
+    body { padding: 40px 16px; }
+    section { padding: 28px 22px; }
+    .logo { font-size: 26px; letter-spacing: 3px; }
+  }
 </style>
 </head>
 <body>
 
-<div class="lang-switch">
-<a href="#ja">日本語</a> | <a href="#en">English</a>
+<div class="container">
+
+  <div class="header">
+    <div class="logo">BRAINHUB</div>
+    <div class="subtitle">PRIVACY POLICY</div>
+  </div>
+
+  <div class="lang-switch">
+    <a href="#ja">日本語</a>
+    <a href="#en">ENGLISH</a>
+  </div>
+
+  <section id="ja">
+    <h1>プライバシーポリシー</h1>
+    <p class="last-updated">最終更新日: 2026年6月1日</p>
+
+    <h2>1. はじめに</h2>
+    <p>本プライバシーポリシーは、BrainHub（以下「本アプリ」）における利用者の個人情報の取り扱いについて定めるものです。本アプリをご利用いただくことで、本ポリシーに同意したものとみなされます。</p>
+
+    <h2>2. 収集する情報</h2>
+    <p>本アプリは、利用者の個人を特定できる情報を一切収集・送信いたしません。</p>
+    <p>以下の情報は端末内（UserDefaults）にのみ保存され、外部に送信されることはありません：</p>
+    <ul>
+      <li>ゲームのスコア・進捗状況</li>
+      <li>実績の解除状況</li>
+      <li>ベストスコアや連勝記録</li>
+      <li>アプリ設定（難易度、サウンドのオン/オフ等）</li>
+    </ul>
+
+    <h2>3. 広告について</h2>
+    <p>本アプリは、Google AdMob による広告を表示します。広告は非パーソナライズ広告として配信されており、利用者のトラッキングは行いません。</p>
+    <p>AdMob のプライバシーポリシーについては以下をご参照ください：<br>
+    <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+    <h2>4. データの第三者提供</h2>
+    <p>本アプリは、利用者のデータを第三者に提供・共有することはありません。</p>
+
+    <h2>5. 子どもの個人情報</h2>
+    <p>本アプリは全年齢を対象としていますが、保護者の同意なしに13歳未満の子どもから個人情報を意図的に収集することはありません。</p>
+
+    <h2>6. プライバシーポリシーの変更</h2>
+    <p>本ポリシーは予告なく変更される場合があります。変更があった場合は本ページにて告知いたします。</p>
+
+    <h2>7. お問い合わせ</h2>
+    <p>本ポリシーまたは本アプリに関するお問い合わせは、以下までご連絡ください：</p>
+    <p>Email: <a href="mailto:steplife.contact@gmail.com">steplife.contact@gmail.com</a></p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="en">
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last Updated: June 1, 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy outlines how user information is handled in BrainHub (hereinafter "the App"). By using the App, you agree to this policy.</p>
+
+    <h2>2. Information We Collect</h2>
+    <p>The App does not collect or transmit any personally identifiable information.</p>
+    <p>The following information is stored only on your device (UserDefaults) and is never transmitted externally:</p>
+    <ul>
+      <li>Game scores and progress</li>
+      <li>Achievement unlock status</li>
+      <li>Best scores and winning streaks</li>
+      <li>App settings (difficulty, sound on/off, etc.)</li>
+    </ul>
+
+    <h2>3. Advertising</h2>
+    <p>The App displays advertisements via Google AdMob. Advertisements are served as non-personalized ads and do not track users.</p>
+    <p>For Google AdMob's privacy policy, please see:<br>
+    <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+    <h2>4. Third-Party Data Sharing</h2>
+    <p>The App does not provide or share user data with any third parties.</p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>The App is intended for users of all ages. We do not knowingly collect personal information from children under 13 without parental consent.</p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>This policy may be updated without notice. Any changes will be posted on this page.</p>
+
+    <h2>7. Contact</h2>
+    <p>For any questions regarding this policy or the App, please contact:</p>
+    <p>Email: <a href="mailto:steplife.contact@gmail.com">steplife.contact@gmail.com</a></p>
+  </section>
+
+  <div class="footer">© 2026 BRAINHUB · ALL RIGHTS RESERVED</div>
+
 </div>
-
-<!-- ========== 日本語 ========== -->
-<section id="ja">
-
-<h1>BrainHub プライバシーポリシー</h1>
-<p class="last-updated">最終更新日: 2026年6月1日</p>
-
-<h2>1. はじめに</h2>
-<p>本プライバシーポリシーは、BrainHub（以下「本アプリ」）における利用者の個人情報の取り扱いについて定めるものです。本アプリをご利用いただくことで、本ポリシーに同意したものとみなされます。</p>
-
-<h2>2. 収集する情報</h2>
-<p>本アプリは、利用者の個人を特定できる情報を一切収集・送信いたしません。</p>
-<p>以下の情報は端末内（UserDefaults）にのみ保存され、外部に送信されることはありません：</p>
-<ul>
-<li>ゲームのスコア・進捗状況</li>
-<li>実績の解除状況</li>
-<li>ベストスコアや連勝記録</li>
-<li>アプリ設定（難易度、サウンドのオン/オフ等）</li>
-</ul>
-
-<h2>3. 広告について</h2>
-<p>本アプリは、Google AdMob による広告を表示します。広告は非パーソナライズ広告として配信されており、利用者のトラッキングは行いません。</p>
-<p>AdMob のプライバシーポリシーについては以下をご参照ください：<br>
-<a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
-
-<h2>4. データの第三者提供</h2>
-<p>本アプリは、利用者のデータを第三者に提供・共有することはありません。</p>
-
-<h2>5. 子どもの個人情報</h2>
-<p>本アプリは全年齢を対象としていますが、保護者の同意なしに13歳未満の子どもから個人情報を意図的に収集することはありません。</p>
-
-<h2>6. プライバシーポリシーの変更</h2>
-<p>本ポリシーは予告なく変更される場合があります。変更があった場合は本ページにて告知いたします。</p>
-
-<h2>7. お問い合わせ</h2>
-<p>本ポリシーまたは本アプリに関するお問い合わせは、以下までご連絡ください：</p>
-<p>Email: <a href="mailto:steplife.contact@gmail.com">steplife.contact@gmail.com</a></p>
-
-</section>
-
-<div class="divider"></div>
-
-<!-- ========== English ========== -->
-<section id="en">
-
-<h1>BrainHub Privacy Policy</h1>
-<p class="last-updated">Last Updated: June 1, 2026</p>
-
-<h2>1. Introduction</h2>
-<p>This Privacy Policy outlines how user information is handled in BrainHub (hereinafter "the App"). By using the App, you agree to this policy.</p>
-
-<h2>2. Information We Collect</h2>
-<p>The App does not collect or transmit any personally identifiable information.</p>
-<p>The following information is stored only on your device (UserDefaults) and is never transmitted externally:</p>
-<ul>
-<li>Game scores and progress</li>
-<li>Achievement unlock status</li>
-<li>Best scores and winning streaks</li>
-<li>App settings (difficulty, sound on/off, etc.)</li>
-</ul>
-
-<h2>3. Advertising</h2>
-<p>The App displays advertisements via Google AdMob. Advertisements are served as non-personalized ads and do not track users.</p>
-<p>For Google AdMob's privacy policy, please see:<br>
-<a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
-
-<h2>4. Third-Party Data Sharing</h2>
-<p>The App does not provide or share user data with any third parties.</p>
-
-<h2>5. Children's Privacy</h2>
-<p>The App is intended for users of all ages. We do not knowingly collect personal information from children under 13 without parental consent.</p>
-
-<h2>6. Changes to This Policy</h2>
-<p>This policy may be updated without notice. Any changes will be posted on this page.</p>
-
-<h2>7. Contact</h2>
-<p>For any questions regarding this policy or the App, please contact:</p>
-<p>Email: <a href="mailto:steplife.contact@gmail.com">steplife.contact@gmail.com</a></p>
-
-</section>
 
 </body>
 </html>
