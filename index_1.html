@@ -3,320 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bluff — プライバシーポリシー / Privacy Policy</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<title>BrainHub Privacy Policy / プライバシーポリシー</title>
 <style>
-  :root {
-    --bg: #07090f;
-    --bg2: #0d1018;
-    --gold: #e2b96f;
-    --gold-soft: #f0d9a8;
-    --purple: #a78bfa;
-    --text: #d8dae0;
-    --text-dim: #8b8f9a;
-    --line: rgba(255,255,255,0.08);
-    --card: rgba(255,255,255,0.025);
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    background: var(--bg);
-    background-image:
-      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(226,185,111,0.10), transparent 60%),
-      radial-gradient(ellipse 60% 40% at 90% 100%, rgba(167,139,250,0.08), transparent 60%);
-    color: var(--text);
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    line-height: 1.85;
-    font-size: 16px;
-    letter-spacing: 0.01em;
-    min-height: 100vh;
-    padding: 0 24px 120px;
-  }
-  .wrap { max-width: 760px; margin: 0 auto; }
-
-  /* Header */
-  header {
-    text-align: center;
-    padding: 88px 0 56px;
-    border-bottom: 1px solid var(--line);
-    margin-bottom: 64px;
-  }
-  .logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(56px, 13vw, 92px);
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    line-height: 1;
-    background: linear-gradient(180deg, var(--gold-soft), var(--gold) 55%, #b8923f);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 60px rgba(226,185,111,0.25);
-    margin-left: 0.14em;
-  }
-  .logo-sub {
-    margin-top: 18px;
-    font-size: 13px;
-    letter-spacing: 0.42em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-  }
-  .doc-title {
-    margin-top: 34px;
-    font-size: 19px;
-    font-weight: 500;
-    color: var(--text);
-    letter-spacing: 0.08em;
-  }
-  .updated {
-    margin-top: 10px;
-    font-size: 13px;
-    color: var(--text-dim);
-  }
-
-  /* Language toggle */
-  .lang-switch {
-    display: flex;
-    gap: 6px;
-    justify-content: center;
-    margin: 40px 0 8px;
-  }
-  .lang-switch button {
-    font-family: inherit;
-    font-size: 12px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-    background: transparent;
-    border: 1px solid var(--line);
-    padding: 9px 22px;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: all 0.25s ease;
-  }
-  .lang-switch button.active {
-    color: var(--bg);
-    background: linear-gradient(135deg, var(--gold-soft), var(--gold));
-    border-color: transparent;
-    font-weight: 700;
-  }
-  .lang-switch button:not(.active):hover {
-    color: var(--gold);
-    border-color: rgba(226,185,111,0.4);
-  }
-
-  /* Sections */
-  .lang-block { display: none; animation: fade 0.5s ease; }
-  .lang-block.active { display: block; }
-  @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-
-  section {
-    margin-bottom: 14px;
-    padding: 30px 32px;
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    position: relative;
-    overflow: hidden;
-  }
-  section::before {
-    content: "";
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 3px;
-    background: linear-gradient(180deg, var(--gold), transparent);
-    opacity: 0.5;
-  }
-  h2 {
-    font-size: 17px;
-    font-weight: 700;
-    color: var(--gold-soft);
-    margin-bottom: 14px;
-    letter-spacing: 0.04em;
-  }
-  p { color: var(--text); margin-bottom: 12px; }
-  p:last-child { margin-bottom: 0; }
-  ul { list-style: none; margin: 8px 0 4px; }
-  li {
-    position: relative;
-    padding-left: 22px;
-    margin-bottom: 9px;
-    color: var(--text);
-  }
-  li::before {
-    content: "◆";
-    position: absolute;
-    left: 0;
-    color: var(--gold);
-    font-size: 9px;
-    top: 7px;
-  }
-  a {
-    color: var(--purple);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(167,139,250,0.35);
-    transition: all 0.2s ease;
-    word-break: break-all;
-  }
-  a:hover { color: #c4b1ff; border-bottom-color: #c4b1ff; }
-  .email {
-    display: inline-block;
-    margin-top: 4px;
-    font-size: 16px;
-    color: var(--gold-soft);
-    border-bottom: 1px solid rgba(226,185,111,0.4);
-  }
-  .email:hover { color: #fff; }
-
-  footer {
-    text-align: center;
-    margin-top: 56px;
-    font-size: 12px;
-    letter-spacing: 0.2em;
-    color: var(--text-dim);
-    text-transform: uppercase;
-  }
+body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 720px; margin: 40px auto; padding: 20px; line-height: 1.7; color: #333; }
+h1 { border-bottom: 2px solid #FFD700; padding-bottom: 10px; }
+h2 { color: #1a1a1a; margin-top: 30px; }
+a { color: #0066cc; }
+.last-updated { color: #888; font-size: 0.9em; }
+.lang-switch { text-align: center; margin: 20px 0; padding: 10px; background: #f5f5f5; border-radius: 8px; }
+.lang-switch a { margin: 0 15px; font-weight: bold; }
+.divider { border-top: 3px solid #FFD700; margin: 60px 0 40px; }
 </style>
 </head>
 <body>
-<div class="wrap">
 
-  <header>
-    <div class="logo">BLUFF</div>
-    <div class="logo-sub">Privacy Policy</div>
-    <div class="doc-title">プライバシーポリシー</div>
-    <div class="updated">最終更新日 / Last Updated: 2026年5月27日 / May 27, 2026</div>
-  </header>
-
-  <div class="lang-switch">
-    <button id="btn-ja" class="active" onclick="setLang('ja')">日本語</button>
-    <button id="btn-en" onclick="setLang('en')">English</button>
-  </div>
-
-  <!-- Japanese -->
-  <div id="ja" class="lang-block active">
-    <section>
-      <h2>はじめに</h2>
-      <p>「Bluff」（以下「本アプリ」）は、利用者のプライバシーを尊重し、個人情報の保護に努めます。本プライバシーポリシーは、本アプリがどのような情報を取得し、どのように利用・保護するかを説明するものです。</p>
-    </section>
-
-    <section>
-      <h2>取得する情報</h2>
-      <p>本アプリ自体は、利用者の氏名・メールアドレス・電話番号などの個人を直接特定する情報を収集しません。ゲームのお気に入りや設定などのデータは、利用者の端末内（UserDefaults）にのみ保存され、外部に送信されることはありません。</p>
-      <p>ただし、本アプリは広告配信のためにGoogle AdMobを利用しています。AdMobおよびGoogleは、広告の配信・最適化のために以下のような情報を自動的に取得する場合があります。</p>
-      <ul>
-        <li>広告識別子（IDFA / Advertising Identifier）</li>
-        <li>デバイスの種類、OSバージョンなどのデバイス情報</li>
-        <li>IPアドレス</li>
-        <li>アプリの利用状況や広告の表示・操作に関する情報</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>第三者によるデータ収集（Google AdMob）</h2>
-      <p>本アプリは広告配信に Google AdMob を使用しています。Googleによるデータの取り扱いについては、以下のGoogleのプライバシーポリシーをご確認ください。</p>
-      <ul>
-        <li>Googleプライバシーポリシー: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
-        <li>Googleが広告でデータを使用する方法: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>トラッキングの許可について</h2>
-      <p>iOSのApp Tracking Transparency（ATT）に基づき、本アプリは広告のトラッキングを行う前に利用者の許可を求めます。利用者は許可を拒否することができ、その場合でもアプリの基本機能は利用可能です。トラッキングの設定は、端末の「設定」アプリからいつでも変更できます。</p>
-    </section>
-
-    <section>
-      <h2>子供のプライバシー</h2>
-      <p>本アプリは13歳未満の子供を対象としていません。13歳未満の子供から意図的に個人情報を収集することはありません。</p>
-    </section>
-
-    <section>
-      <h2>情報の利用目的</h2>
-      <p>取得した情報は、広告の配信・最適化、およびアプリの品質向上のためにのみ利用されます。</p>
-    </section>
-
-    <section>
-      <h2>プライバシーポリシーの変更</h2>
-      <p>本プライバシーポリシーは、必要に応じて変更されることがあります。変更があった場合は、本ページにて最終更新日とともに掲載します。</p>
-    </section>
-
-    <section>
-      <h2>お問い合わせ</h2>
-      <p>本プライバシーポリシーに関するご質問は、以下までお問い合わせください。</p>
-      <a class="email" href="mailto:steplife.contact@gmail.com">steplife.contact@gmail.com</a>
-    </section>
-  </div>
-
-  <!-- English -->
-  <div id="en" class="lang-block">
-    <section>
-      <h2>Introduction</h2>
-      <p>"Bluff" (the "App") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains what information the App collects and how it is used and protected.</p>
-    </section>
-
-    <section>
-      <h2>Information We Collect</h2>
-      <p>The App itself does not collect personally identifiable information such as your name, email address, or phone number. Data such as game favorites and settings is stored only on your device (UserDefaults) and is not transmitted externally.</p>
-      <p>However, the App uses Google AdMob to display advertisements. AdMob and Google may automatically collect the following information to serve and optimize ads:</p>
-      <ul>
-        <li>Advertising Identifier (IDFA / Advertising Identifier)</li>
-        <li>Device information such as device type and OS version</li>
-        <li>IP address</li>
-        <li>Information about app usage and ad impressions or interactions</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Third-Party Data Collection (Google AdMob)</h2>
-      <p>The App uses Google AdMob to deliver advertisements. For details on how Google handles data, please review Google's policies below:</p>
-      <ul>
-        <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
-        <li>How Google uses data in advertising: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Tracking Permission</h2>
-      <p>In accordance with Apple's App Tracking Transparency (ATT) framework, the App will request your permission before tracking for advertising purposes. You may decline this request, and the core features of the App will remain available. You can change your tracking preferences at any time in your device's Settings app.</p>
-    </section>
-
-    <section>
-      <h2>Children's Privacy</h2>
-      <p>The App is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
-    </section>
-
-    <section>
-      <h2>Purpose of Use</h2>
-      <p>Collected information is used solely for ad delivery and optimization, and for improving the quality of the App.</p>
-    </section>
-
-    <section>
-      <h2>Changes to This Privacy Policy</h2>
-      <p>This Privacy Policy may be updated as needed. Any changes will be posted on this page along with the updated date.</p>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>If you have any questions about this Privacy Policy, please contact us:</p>
-      <a class="email" href="mailto:steplife.contact@gmail.com">steplife.contact@gmail.com</a>
-    </section>
-  </div>
-
-  <footer>Bluff · Privacy Policy</footer>
-
+<div class="lang-switch">
+<a href="#ja">日本語</a> | <a href="#en">English</a>
 </div>
 
-<script>
-  function setLang(lang) {
-    document.getElementById('ja').classList.toggle('active', lang === 'ja');
-    document.getElementById('en').classList.toggle('active', lang === 'en');
-    document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
-    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-    document.documentElement.lang = lang;
-  }
-</script>
+<!-- ========== 日本語 ========== -->
+<section id="ja">
+
+<h1>BrainHub プライバシーポリシー</h1>
+<p class="last-updated">最終更新日: 2026年6月1日</p>
+
+<h2>1. はじめに</h2>
+<p>本プライバシーポリシーは、BrainHub（以下「本アプリ」）における利用者の個人情報の取り扱いについて定めるものです。本アプリをご利用いただくことで、本ポリシーに同意したものとみなされます。</p>
+
+<h2>2. 収集する情報</h2>
+<p>本アプリは、利用者の個人を特定できる情報を一切収集・送信いたしません。</p>
+<p>以下の情報は端末内（UserDefaults）にのみ保存され、外部に送信されることはありません：</p>
+<ul>
+<li>ゲームのスコア・進捗状況</li>
+<li>実績の解除状況</li>
+<li>ベストスコアや連勝記録</li>
+<li>アプリ設定（難易度、サウンドのオン/オフ等）</li>
+</ul>
+
+<h2>3. 広告について</h2>
+<p>本アプリは、Google AdMob による広告を表示します。広告は非パーソナライズ広告として配信されており、利用者のトラッキングは行いません。</p>
+<p>AdMob のプライバシーポリシーについては以下をご参照ください：<br>
+<a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+<h2>4. データの第三者提供</h2>
+<p>本アプリは、利用者のデータを第三者に提供・共有することはありません。</p>
+
+<h2>5. 子どもの個人情報</h2>
+<p>本アプリは全年齢を対象としていますが、保護者の同意なしに13歳未満の子どもから個人情報を意図的に収集することはありません。</p>
+
+<h2>6. プライバシーポリシーの変更</h2>
+<p>本ポリシーは予告なく変更される場合があります。変更があった場合は本ページにて告知いたします。</p>
+
+<h2>7. お問い合わせ</h2>
+<p>本ポリシーまたは本アプリに関するお問い合わせは、以下までご連絡ください：</p>
+<p>Email: <a href="mailto:steplife.contact@gmail.com">steplife.contact@gmail.com</a></p>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ========== English ========== -->
+<section id="en">
+
+<h1>BrainHub Privacy Policy</h1>
+<p class="last-updated">Last Updated: June 1, 2026</p>
+
+<h2>1. Introduction</h2>
+<p>This Privacy Policy outlines how user information is handled in BrainHub (hereinafter "the App"). By using the App, you agree to this policy.</p>
+
+<h2>2. Information We Collect</h2>
+<p>The App does not collect or transmit any personally identifiable information.</p>
+<p>The following information is stored only on your device (UserDefaults) and is never transmitted externally:</p>
+<ul>
+<li>Game scores and progress</li>
+<li>Achievement unlock status</li>
+<li>Best scores and winning streaks</li>
+<li>App settings (difficulty, sound on/off, etc.)</li>
+</ul>
+
+<h2>3. Advertising</h2>
+<p>The App displays advertisements via Google AdMob. Advertisements are served as non-personalized ads and do not track users.</p>
+<p>For Google AdMob's privacy policy, please see:<br>
+<a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+<h2>4. Third-Party Data Sharing</h2>
+<p>The App does not provide or share user data with any third parties.</p>
+
+<h2>5. Children's Privacy</h2>
+<p>The App is intended for users of all ages. We do not knowingly collect personal information from children under 13 without parental consent.</p>
+
+<h2>6. Changes to This Policy</h2>
+<p>This policy may be updated without notice. Any changes will be posted on this page.</p>
+
+<h2>7. Contact</h2>
+<p>For any questions regarding this policy or the App, please contact:</p>
+<p>Email: <a href="mailto:steplife.contact@gmail.com">steplife.contact@gmail.com</a></p>
+
+</section>
+
 </body>
 </html>
